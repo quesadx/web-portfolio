@@ -9,13 +9,68 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <!-- Navigation content goes here  -->
+    <nav id="navbar"> <!-- id makes it targetable -->
+
+        <a href="#hero" class="nav-logo">
+        matteo<span class="nav-logo-host">@nixos</span><span class="nav-prompt">:~$</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#hero">~</a></li>
+            <li><a href="#about">~ about</a></li>
+            <li><a href="#skills">~ skills</a></li>
+            <li><a href="#projects">~ projects</a></li>
+            <li><a href="#contact">~ contact</a></li>
+        </ul>
+
+        <button class="nav-hamburger" id="hamburgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
     </nav>
 
     <main>
         <section id="hero">
-            <!-- Hero section content goes here -->
+            <article class="terminal-card">
+                <header class="terminal-header">
+                <span class="terminal-dot"></span>
+                <span class="terminal-dot"></span>
+                <span class="terminal-dot"></span>
+                <span class="terminal-title">matteo@nixos:~</span>
+                </header>
+                <div class="terminal-body">
+                <p class="terminal-command">
+                    <span class="terminal-prompt">matteo@nixos:~$</span>
+                    <span class="terminal-cmd-text">cat about.txt</span>
+                </p>
+                <p class="terminal-output">Name    : Matteo Vargas Quesada</p>
+                <p class="terminal-output">Role    : Systems Engineering Student, 3rd year</p>
+                <p class="terminal-output">From    : Costa Rica (open to remote worldwide)</p>
+                <br>
+                <p class="terminal-command">
+                    <span class="terminal-prompt">matteo@nixos:~$</span>
+                    <span class="terminal-cmd-text">uname -a</span>
+                </p>
+                <p class="terminal-output">NixOS 25.11 Yarara  |  GNOME  |  ThinkPad X13 Gen2i</p>
+                <br>
+                <p class="terminal-command">
+                    <span class="terminal-prompt">matteo@nixos:~$</span>
+                    <span class="terminal-cmd-text">cat interests.txt</span>
+                </p>
+                <p class="terminal-output">Declarative systems, containers, CLI/TUI tools,</p>
+                <p class="terminal-output">reproducible environments, open-source everything.</p>
+                <br>
+                <p class="terminal-command">
+                    <span class="terminal-prompt">matteo@nixos:~$</span>
+                    <span class="terminal-cursor"></span>
+                </p>
+                </div>
+            </article>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">./projects</a>
+                <a href="#contact" class="btn-secondary">./contact</a>
+            </div>
         </section>
 
         <section id="about">
