@@ -1,0 +1,45 @@
+/* ===== BUTTONS ===== */
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-family: var(--font);
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-primary {
+  background-color: var(--green);
+  color: var(--bg-dark);
+  border: 1px solid var(--green);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #22c55e;
+  outline: none;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--green);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: var(--green);
+  outline: none;
+}
