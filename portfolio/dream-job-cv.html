@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>dream-job-cv</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio and CV of Matteo Vargas Quesada">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="brand">matteo<span style="color:#555">@nixos</span>:~$</div>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul id="nav-menu">
+        <li><a href="#hero">~</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects" class="active">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero" style="min-height:100vh;display:flex;align-items:center;justify:center;flex-direction:column;">
+      <div class="container">
+        <pre style="background:#111; padding:1rem; border:1px solid #1e2e1e; border-radius:6px;">
+<span style="color:#4ade80;">matteo@nixos:~$</span> cat about.txt
+Name    : Matteo Vargas Quesada
+Role    : Systems Engineering Student, 3rd year
+From    : Costa Rica (open to remote worldwide)
+
+<span style="color:#4ade80;">matteo@nixos:~$</span> uname -a
+NixOS 25.11 Yarara | GNOME | ThinkPad X13 Gen2i
+
+<span style="color:#4ade80;">matteo@nixos:~$</span> cat interests.txt
+Declarative systems, containers, CLI/TUI tools,
+reproducible environments, open-source everything.
+        </pre>
+        <div style="margin-top:2rem;">
+          <button class="btn btn-primary" onclick="location.href='#projects'">./projects</button>
+          <button class="btn btn-outline" onclick="location.href='#contact'">./contact</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div><span class="subtitle">01</span><h2>about</h2><hr></div>
+      <p>Systems Engineering student in my 3rd year, based in Costa Rica. I gravitate toward systems that are declarative, reproducible, and built to last. My daily driver is NixOS — not because it's trendy, but because it solves the right problems.</p>
+      <p>I'm drawn to CLI/TUI workflows, containers (distrobox on Fedora, nix develop with direnv), and anything that eliminates environmental drift. I love ThinkPads, hate proprietary lock-in, and have a genuine passion for tinkering — if something can be fixed, tuned, or made to work better, I'll figure it out.</p>
+      <p>I adapt quickly to any environment — new codebases, new stacks, new teams. I pick things up fast and stay comfortable in the unfamiliar.</p>
+
+      <h3>teaching log</h3>
+      <ul>
+        <li><strong>Programming I Tutor</strong> – 2 semesters, helped students build foundations in structured programming</li>
+        <li><strong>General Mathematics Tutor</strong> – 2 semesters, calculus/algebra/university‑level math</li>
+      </ul>
+      <p>Strong ability to self-organize, push through hard deadlines, and communicate technical concepts clearly under pressure.</p>
+
+      <h3>philosophy</h3>
+      <details><summary>Declarative Determinism</summary><p>Treat your OS as a mathematical function, not an organic decaying entity. NixOS ensures environments are reproducible and time-resistant — eliminating "it works on my machine" forever.</p></details>
+      <details><summary>Plain‑Text Permanence</summary><p>Local, human-readable formats over proprietary cloud silos. Markdown, plain configs, local Obsidian vaults — knowledge that's accessible decades from now with no platform dependency.</p></details>
+      <details><summary>Hardware Control & Longevity</summary><p>ThinkPads for repairability and control. LineageOS for phones. Devices that stay functional through community-driven open-source software, not vendor planned obsolescence.</p></details>
+      <details><summary>Keyboard‑Driven Efficiency</summary><p>TUIs and minimalist WMs (Sway, Helix) — tools that get out of the way. Muscle memory, static reliable workflows, zero friction from heavy animations or forced UI churn.</p></details>
+      <details><summary>Anti‑Fragility through Localism</summary><p>Minimize external dependencies. Declarative local configs, offline-capable tools, and self-contained environments. Infrastructure immune to internet outages and service shutdowns.</p></details>
+
+      <p>Host: NixOS 25.11 Yarara | Shell: zsh / bash | DE: GNOME</p>
+      <p>Devices: ThinkPad X13 Gen2i | ThinkPad L13 Gen2</p>
+      <p>WM history: Hyprland · Sway · KDE · GNOME (current, preferred)</p>
+      <p>Editor: Helix (primary)</p>
+    </section>
+
+    <section id="skills" class="container" style="background:#0a0b0a;">
+      <div><span class="subtitle">02</span><h2>skills --list</h2><hr></div>
+      <!-- Skills content simplified -->
+      <p>Languages: Java (Maven, JavaFX), Python (Flask, Ratatui), JavaScript (Node.js, Express.js), Bash, Nix</p>
+      <p>Linux / OS: NixOS 25.11, Fedora, Debian, Arch/CachyOS</p>
+      <p>Containers & Infra: Docker, Distrobox, nix develop, Oracle DB</p>
+      <p>Tools & Workflow: Helix, Git, GNOME, Obsidian, direnv</p>
+    </section>
+
+    <section id="projects" class="container">
+      <div><span class="subtitle">03</span><h2>git log --oneline</h2><hr></div>
+      <!-- Project summaries -->
+      <p><strong><a href="https://github.com/quesadx/linux-dotfiles">linux-dotfiles</a></strong> – daily driver config, NixOS/home‑manager flakes.</p>
+      <p><strong><a href="https://github.com/quesadx/flow-fx-project-manager">flow-fx-project-manager</a></strong> – JavaFX desktop project manager (uni project).</p>
+      <p><strong><a href="https://github.com/quesadx/gestion-del-fin-api">gestion-del-fin-api</a></strong> – Node.js/Express REST API with Oracle DB.</p>
+      <p><strong><a href="https://github.com/quesadx/maximize-2-new-workspace">maximize-2-new-workspace</a></strong> – GNOME extension for workspace management.</p>
+      <p><strong><a href="https://github.com/quesadx/routy-c">routy-c</a></strong> – lightweight C HTTP router.</p>
+      <p><strong><a href="https://github.com/quesadx/human-ide">human-ide</a></strong> – experimental Python/TUI IDE.</p>
+      <p><strong><a href="https://github.com/quesadx/muffet-solitario">muffet-solitario</a></strong> – terminal solitaire game.</p>
+      <p><a href="https://github.com/quesadx">open github.com/quesadx →</a></p>
+    </section>
+
+    <section id="contact" class="container" style="background:#0a0b0a;">
+      <div><span class="subtitle">04</span><h2>./contact.sh</h2><hr></div>
+      <p><strong>Status:</strong> Open to opportunities — internships, part-time, student projects</p>
+      <p>Location: Costa Rica (remote worldwide)</p>
+      <p>Response: <24h</p>
+      <p>Email: <a href="mailto:matteo.vargas.quesada@gmail.com">matteo.vargas.quesada@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/quesadx">github.com/quesadx</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/quesadx">linkedin.com/in/quesadx</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <span>matteo@nixos:~$ exit</span> · built on NixOS 25.11 · 2025 Matteo Vargas Quesada
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click',function(){
+      document.getElementById('nav-menu').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
