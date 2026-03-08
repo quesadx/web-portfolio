@@ -1,14 +1,83 @@
 <!doctype html>
+<!--
+  SEMANTIC HTML INDEX
+
+  <section>
+    Container for major page sections. Groups related content into logical
+    areas (hero, about, skills, projects, contact). Each section is typically
+    1 of 4-5 major page divisions.
+
+  <header>
+    Introductory or navigational content. Used for page header (navbar with
+    logo/nav-links) and section headers (section number + title + divider).
+    Can appear multiple times.
+
+  <nav>
+    Navigation links. Used for main navbar and contact link lists. Defines
+    navigational areas of the page.
+
+  <main>
+    Main content wrapper. Wraps all primary page content (excluding navbar
+    and footer). Semantically marks the page's primary purpose.
+
+  <h1>, <h2>
+    Heading hierarchy. h1 = page title (hidden with sr-only). h2 = section
+    titles (visible: "about", "skills", "git log --oneline"). Maintains
+    document outline.
+
+  <article>
+    Self-contained composition. Used for about bio/teaching/philosophy sections
+    and project cards. Each article can stand independently.
+
+  <aside>
+    Complementary content. Sidebar-like info (about system info, contact status)
+    related to but separate from main flow.
+
+  <div>
+    Generic container. Non-semantic wrapper for layout groups that don't fit
+    other semantic tags (terminal-card, section-inner, skills-grid, etc.).
+
+  <p>
+    Paragraph. Text content blocks. Used for terminal output, descriptions,
+    comments, and body text.
+
+  <span>
+    Inline semantic markup. Used for small, non-block content within text or
+    UI elements (green prompt "$", nav logo parts, status dot, terminal cursor).
+
+  <ul>, <li>
+    Unordered lists and list items. Used for nav-links, skill-list, project-tags,
+    teaching-list, philosophy-list, contact-links, sysinfo-list, and footer info.
+
+  <a>
+    Hyperlinks. Navigation targets (nav links, project titles, contact links)
+    and external links (GitHub, LinkedIn).
+
+  <details>, <summary>
+    Expandable disclosure widget. Used for about philosophy items. <summary>
+    shows clickable label, <details> wraps expandable content.
+
+  <form>
+    Form container. Wraps contact form with fields and submit button.
+
+  <label>
+    Form label. Associates text with form inputs via 'for' attribute.
+
+  <input>, <textarea>
+    Form inputs. Text fields (name, email) and text area (message).
+
+  <button>
+    Interactive action. Form submit, hero navigation buttons. Can be <button>
+    or styled <a> with .btn-primary/.btn-secondary classes.
+
+  <footer>
+    Footer section. Page-level footer with exit message and build info.
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matteo Vargas Quesada</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
@@ -43,7 +112,6 @@
     </nav>
 
     <main>
-      <!-- Hero Section -->
       <section id="hero">
         <h1 class="sr-only">
           Matteo Vargas Quesada – Systems Engineering Portfolio
@@ -108,7 +176,6 @@
         </div>
       </section>
 
-      <!-- About Section -->
       <section id="about">
         <div class="section-inner">
           <header class="section-header">
@@ -117,7 +184,6 @@
             <div class="section-line"></div>
           </header>
 
-          <!-- whoami -->
           <article class="about-bio">
             <p class="comment">$ whoami</p>
             <p class="text-bright">
@@ -140,7 +206,6 @@
             </p>
           </article>
 
-          <!-- teaching log -->
           <article class="about-teaching">
             <p class="comment">$ cat teaching.log</p>
 
@@ -166,7 +231,6 @@
             </p>
           </article>
 
-          <!-- philosophy -->
           <article class="about-philosophy">
             <p class="comment">$ cat philosophy.md</p>
 
@@ -238,7 +302,6 @@
             </ul>
           </article>
 
-          <!-- system info -->
           <aside class="about-sysinfo">
             <p class="sysinfo-command">
               <span class="terminal-prompt">$</span> inxi -S
@@ -259,7 +322,6 @@
           </aside>
         </div>
       </section>
-      <!-- skills section -->
       <section id="skills">
         <div class="section-inner">
           <header class="section-header">
@@ -717,7 +779,6 @@
             <div class="section-line"></div>
           </header>
 
-          <!-- status -->
           <aside class="contact-status">
             <p class="comment"># status</p>
             <p class="status-open">
@@ -730,7 +791,6 @@
             <p class="status-detail">Response : &lt; 24h</p>
           </aside>
 
-          <!-- contact links -->
           <nav aria-label="Contact links">
             <p class="comment">$ cat contact.json</p>
             <ul class="contact-links">
@@ -809,7 +869,6 @@
             </ul>
           </nav>
 
-          <!-- form -->
           <div class="contact-form-wrap">
             <p class="comment">$ send --message</p>
             <form class="contact-form" action="#" method="post">

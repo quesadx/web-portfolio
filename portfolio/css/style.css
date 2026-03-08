@@ -7,7 +7,7 @@
   --text-dim:   #8b949e;
   --text-muted: #555555;
   --border:     #1e2e1e;
-  --font:       'JetBrains Mono', monospace;
+  --font:       monospace;
 }
 
 /* ===== RESET & BASE ===== */
