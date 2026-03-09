@@ -5,7 +5,7 @@
 Profesional con experiencia en desarrollo de software full-stack, diseño de arquitecturas y despliegue en entornos cloud.
 Enfocado en construir soluciones robustas y escalables.
 
-[Mi CV / landing page](https://quesadx.figma.site/)
+[Mi CV / landing page en Figma](https://quesadx.figma.site/)
 
 # 2026-03-07
 
